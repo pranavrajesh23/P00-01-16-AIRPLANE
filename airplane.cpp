@@ -1,6 +1,25 @@
 #include<iostream>
 using namespace std;
 
+void connectingCheck()
+{
+    cout<<"\n--------Connecting Check Process--------\n";
+    cout<<"\nDo you have connecting flight? (yes/no)\n";
+    string con;
+    cin>>con;
+    if(con=="yes")
+    {
+        cout<<"\nAgain to security screening\n";
+        screening();
+    }
+    else
+    {
+        cout<<"\nNo connecting flights\n";
+        cout<<"\nKindly leave the flight\n";
+        cout<<"\nFinally immigrated\n";
+        // permit();
+    }
+}
 
 void immigration()
 {
@@ -83,4 +102,7 @@ int main()
     cout<<"\nBaggage drop\n";
     cout<<"\nOut for baggage screening\n";
     screening();
+    cout<<"\nNext step connecting check\n";
+    connectingCheck();
+    cout<<"\n---------End of Passenger Workflow------------\n";
 }
