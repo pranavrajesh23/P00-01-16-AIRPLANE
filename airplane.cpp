@@ -1,6 +1,16 @@
 #include<iostream>
 using namespace std;
 
+
+void immigration()
+{
+    cout<<"\n--------Immigration Process--------\n"; 
+    cout<<"\nImmigration started\n";
+    cout<<"\nBoarding the flight\n";
+    cout<<"\nFlight departs\n";
+    cout<<"\nFlight lands\n"; 
+}
+
 void goodsCheck()
 {
     cout<<"\n--------Goods Check--------\n";
@@ -62,7 +72,7 @@ void screening()
     goodsCheck();
     cout<<"\nAll screening checks are completed\n";
     cout<<"\nBe ready to fly high\n";
-    // immigration();
+    immigration();
 }
 
 
