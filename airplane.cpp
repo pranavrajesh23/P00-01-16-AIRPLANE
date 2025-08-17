@@ -1,6 +1,26 @@
 #include<iostream>
 using namespace std;
 
+void screening();
+
+void permit()
+{
+    cout<<"\n--------Permit Process--------\n";
+    cout<<"\nDo you have the permit to enter the country? (yes/no)\n";
+    string per;
+    cin>>per;
+    if(per=="yes")
+    {
+        cout<<"\nPermitted....\n";
+        cout<<"\nClaim baggage and explore\n";
+    }
+    else
+    {
+        cout<<"\nNot permitted.....\n";
+        cout<<"\nSend to orginate country\n";
+    }
+}
+
 void connectingCheck()
 {
     cout<<"\n--------Connecting Check Process--------\n";
@@ -17,8 +37,8 @@ void connectingCheck()
         cout<<"\nNo connecting flights\n";
         cout<<"\nKindly leave the flight\n";
         cout<<"\nFinally immigrated\n";
-        // permit();
     }
+    permit();
 }
 
 void immigration()
