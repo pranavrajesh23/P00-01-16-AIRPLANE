@@ -1,6 +1,22 @@
 #include<iostream>
 using namespace std;
 
+void goodsCheck()
+{
+    cout<<"\n--------Goods Check--------\n";
+    cout<<"\nDo the baggage contain any dangerous goods? (yes/no)\n";
+    string metal;
+    cin>>metal;
+    if(metal=="yes")
+    {
+        cout<<"\nGive up thte dangerous goods\n";
+    }
+    else
+    {
+        cout<<"\nNo dangerous goods found\n";
+    }
+}
+
 void metalCheck()
 {
     cout<<"\n--------Metal Check--------\n";
@@ -43,7 +59,7 @@ void screening()
     cout<<"\nRedirecting to the next check\n";
     metalCheck();
     cout<<"\nReadirecting to the final check\n"; 
-    // GoodsCheck();
+    goodsCheck();
     cout<<"\nAll screening checks are completed\n";
     cout<<"\nBe ready to fly high\n";
     // immigration();
